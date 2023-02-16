@@ -1,1 +1,1 @@
-a script that generate assembly code
+a script that compile and create executable named cisfun
