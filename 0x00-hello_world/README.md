@@ -1,1 +1,1 @@
-c programming with puts
+c programmer prints sizes of various types
