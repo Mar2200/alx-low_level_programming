@@ -1,1 +1,1 @@
-c programmer prints sizes of various types
+c program printing input to standard error
