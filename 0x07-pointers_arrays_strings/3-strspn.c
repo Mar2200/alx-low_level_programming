@@ -4,24 +4,26 @@
  * _strspn - gets the length of a prefix substring
  * @s: input
  * @accept: input
- * Return:
+ * Return: n
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int a = 0, b, t = 0;
+	unsigned int n = 0;
+	int r;
 
-	while (accept[a])
+	while (*s)
 	{
-		b = 0;
-		while (s[b] != 32)
+		for (r = 0; accept[r]; r++)
 		{
-			if (accept[a] == s[b])
+			if (*s == accept[r])
 			{
-				t++;
+				n++;
+				break;
 			}
-			b++;
+			else if (accept[r + 1] == '\0')
+				return (n);
 		}
-		a++;
+		s++;
 	}
-	return (t);
+	return (n);
 }
